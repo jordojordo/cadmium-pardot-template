@@ -28,6 +28,7 @@ var scriptLoader = function (path, callback) {
     document.getElementsByTagName("head")[0].appendChild(script);
   }
 };
+scriptLoader("https://code.jquery.com/jquery-3.4.1.min.js")
 scriptLoader(
   "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"
 );
