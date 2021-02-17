@@ -120,6 +120,35 @@ p {
   color: #245a84;
 }
 
+.hdrDiv {
+  position: absolute;
+  border-top: 2px solid #c9c9c9;
+  margin-top: 4%;
+  width: 100%;
+  margin-left: 0%;
+  height: 85px;
+  top: 28%;
+}
+
+.hdrDivClr {
+  border-top: 2px solid #5e8046;
+  position: absolute;
+  margin-top: 4%;
+  width: 100%;
+  margin-left: 0%;
+  height: 85px;
+  top: 28%;
+}
+
+.hdrDivHide {
+  width: 63%;
+  height: 16%;
+  position: absolute;
+  background-color: #fff;
+  top: -10%;
+  margin-left: 18%;
+}
+
 /* MAIN */
 
 .main-header__background {
@@ -263,33 +292,6 @@ p {
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
-/* MODALS */
-
-.modal {
-  cursor: zoom-out;
-}
-
-.modal__img {
-  cursor: zoom-in;
-}
-
-.modal-dialog {
-  max-width: 70vw !important;
-  max-height: 80vh !important;
-}
-
-@media (max-width: 992px) {
-  .modal-dialog {
-    max-width: 80vw !important;
-  }
-}
-
-@media (max-width: 768px) {
-  .modal-dialog {
-    max-width: 90vw !important;
-  }
-}
-
 /* BUTTONS */
 
 .custom-btn__1 {
@@ -351,42 +353,6 @@ p {
 
 .custom-btn__9:hover {
   color: #ddd;
-}
-
-/* REQUEST INFO */
-
-.request-info__background {
-  background-color: #51a3e2;
-  min-height: 50vh;
-  -webkit-clip-path: polygon(0 0, 100% 5%, 100% 100%, 0% 100%);
-  clip-path: polygon(0 0, 100% 5%, 100% 100%, 0% 100%);
-}
-
-.request-info__hidden {
-  display: none !important;
-}
-
-.request-info__visible {
-  display: block;
-}
-
-/* Use for success message */
-.contact-card {
-  overflow: hidden;
-  height: 0;
-  opacity: 0;
-  transition: height 0ms 400ms, opacity 400ms 0ms;
-}
-
-.contact-card.visible {
-  height: auto;
-  opacity: 1;
-  transition: height 0ms 0ms, opacity 600ms 0ms;
-}
-
-#contactMessage {
-  display: flex;
-  align-items: center;
 }
 
 /* MAIN FOOTER */
