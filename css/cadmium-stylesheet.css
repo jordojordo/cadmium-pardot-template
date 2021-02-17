@@ -120,33 +120,9 @@ p {
   color: #245a84;
 }
 
-.hdrDiv {
-  position: absolute;
-  border-top: 2px solid #c9c9c9;
-  margin-top: 4%;
-  width: 100%;
-  margin-left: 0%;
-  height: 85px;
-  top: 28%;
-}
-
-.hdrDivClr {
-  border-top: 2px solid #5e8046;
-  position: absolute;
-  margin-top: 4%;
-  width: 100%;
-  margin-left: 0%;
-  height: 85px;
-  top: 28%;
-}
-
-.hdrDivHide {
-  width: 63%;
-  height: 16%;
-  position: absolute;
-  background-color: #fff;
-  top: -10%;
-  margin-left: 18%;
+.divider {
+  border-bottom: 1px solid #7e8894;
+  width: 75%;
 }
 
 /* MAIN */

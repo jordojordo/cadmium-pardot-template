@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+
+<head>
+  <!-- META DATA -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no"
+  />
+  <meta name="author" content="CadmiumCD" />
+  <meta name="email" content="info@cadmiumcd.com" />
+  <meta name="format-detection" content="telephone=no" />
+
+  <!-- LIBRARIES -->
+  <script src="http://cadmiumcd.com/products/eventscribe/app/includes/js/libs/modernizr-2.0.6.min.js"></script>
+  <script
+    type="text/javascript"
+    src="http://cadmiumcd.com/CadmiumCD/includes/js/libs/jquery-1.10.1.min.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="http://cadmiumcd.com/CadmiumCD/includes/js/libs/jquery.dotdotdot.min.js"
+  ></script>
+  <script src="http://cadmiumcd.com/products/eventscribe/app/includes/js/custom.js"></script>
+  <script src="http://cadmiumcd.com/products/eventscribe/app/includes/js/libs/jquery.path.js"></script>
+  <script src="http://cadmiumcd.com/products/eventscribe/app/includes/js/libs/jquery.easing.1.3.js"></script>
+  <script src="http://cadmiumcd.com/products/eventscribe/app/includes/js/libs/css3-mediaqueries.min.js"></script>
+
+  <!-- CSS -->
+  <LINK href="http://cadmiumcd.com/CadmiumCD/includes/css/cadmiumfont.css"
+  type=text/css rel=stylesheet> <LINK
+  href="http://cadmiumcd.com/CadmiumCD/includes/css/CadmiumStyles.css"
+  type=text/css rel=stylesheet>
+
+  <style>
+
+    /*===============*/
+    /* Header Images */
+    /*===============*/
+
+    @media only screen and (min-width: 1140px) {
+    	#feature {background: #161618 url(/CadmiumCD/custom/images/home-header.jpg) 50% 0 no-repeat;}
+    }
+
+    @media only screen and (min-width: 768px) {
+    	#feature {background: #161618 url(/CadmiumCD/custom/images/home-header.jpg) 65% 0 no-repeat;}
+    }
+
+
+    /*============*/
+    /* Color Wave */
+    /*============*/
+    .blueWrap {background: #E1C15E url(/CadmiumCD/custom/images/yellowstripe.jpg) repeat;}
+
+
+    /*=============*/
+    /* Icon Splash */
+    /*=============*/
+    .graydiv.bottom {background: #F1F1F1 url(/CadmiumCD/custom/images/icons_bottom.png) no-repeat center 115%;}
+
+
+    /*================*/
+    /* General Styles */
+    /*================*/
+
+    #feature {margin: 0 !important; padding: 115px 0 130px 0 !important;}
+    #products {background: rgba(67, 140, 201, 0.9)}
+    .prods .largeText p {color: #57a7ea}
+    .blueWrap .largeText h2, .blurWrap .largeText h4 {color: #fff;}
+    .largeText h2, .largeText h4 {color: #57a7ea;}
+    #landingbtn:hover {background-color: #57a7ea;}
+    #products ul li a {color: #3D3704;}
+    #products ul li a:hover {background: #57a7ea}
+    #products ul li a.btn8 {color: #fff;}
+    #products ul li a.btn8:hover {background: #A07822}
+    .stickyfooter a {color: #353322;}
+    #stickyfooter a:hover {text-decoration: none;color: #57532F;}
+    nav a:hover {color: #57a7ea !important;}
+    .bluefeature {background: rgba(67, 140, 201, 0.9);}
+    ::selection {background: #57a7ea;}
+    a:hover {text-decoration: underline;color: #333;}
+    #products ul li a.active {background: #57a7ea;}
+    #products .btn8 {background: #000;}
+    .blueWrap a {color: #fff !important;text-decoration: underline;}
+    .blueWrap a:hover {color: #5A381C !important;}
+    a:visited, a:link, a  {color: #57a7ea;}
+    .headingicon, .hicon {color: #57a7ea;}
+    .module .col img.crsimg {width:50%;}
+    sup {top: -0.8em;}
+    .module, .moduleright {padding: 30px 0; !important}
+    #actiondiv a, #actiondiv span {color:#EAA32F;}
+    .bluefeature h2 {color: #fff}
+    #centeredbtn a:hover {background: #319BD2;}
+
+
+    /*===============*/
+    /* @media Styles */
+    /*===============*/
+
+    @media screen and (max-width: 1024px) {
+    	.bannerTag {display:none;}
+    	.module .col img.crsimg {width:30%;}
+    }
+
+    @media screen and (max-width: 768px) {
+    	.prods .largeText p {font-size: 0.7em; color: #555;}
+    }
+
+    @media screen and (max-width: 468px) {
+    	#logo img {width: 200px;}
+    }
+
+    @media screen and (min-width: 468px) {
+
+    }
+
+    @media screen and (min-width: 768px) {
+
+    }
+
+    @media screen and (min-width: 1024px) {
+
+    }
+  </style>
+  <!--[if lte IE 9]>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://cadmiumcd.com/CadmiumCD/custom/css/ie8-and-down.css"
+    />
+  <![endif]-->
+  <!--[if !IE]><!-->
+  <script>
+    if (/*@cc_on!@*/ false) {
+      document.documentElement.className += " ie10";
+    }
+  </script>
+  <!--<![endif]-->
+
+  <!--Google Analytics-->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i["GoogleAnalyticsObject"] = r;
+      (i[r] =
+        i[r] ||
+        function () {
+          (i[r].q = i[r].q || []).push(arguments);
+        }),
+        (i[r].l = 1 * new Date());
+      (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m);
+    })(
+      window,
+      document,
+      "script",
+      "//www.google-analytics.com/analytics.js",
+      "ga"
+    );
+    ga("create", "UA-46671018-5", "cadmiumcd.com");
+    ga("send", "pageview");
+  </script>
+
+  <style>
+    .largeText h1 {
+      font-weight: lighter;
+      color: #222;
+      font-size: 1.6em;
+      line-height: 0.9em;
+      position: relative;
+    }
+    .largeText h2 {
+      color: #57a7ea;
+      font-size: 0.6em;
+      margin: -1em 0 0 0;
+      font-family: "OpenSansSemiBold", Arial, Helvetica, sans-serif;
+      position: relative;
+    }
+    #footer-container {
+      margin-bottom: 0px !important;
+      bottom: 0px;
+    }
+    .landingmoduleimg {
+      float: left;
+      width: 50%;
+    }
+    .landingimg img {
+      width: 100%;
+    }
+    .landingimg p {
+      color: #bdbdbd;
+      margin: 0;
+    }
+    .landingmodule {
+      float: right;
+      width: 45%;
+      line-height: 2em;
+      padding-left: 5%;
+    }
+    .landingText h2 {
+      color: #575757;
+      font-size: 2em;
+      font-weight: lighter;
+      margin: 3% auto;
+    }
+    .landingText p {
+      line-height: 2em;
+    }
+    #landingbtn {
+      background-color: #359be3;
+      margin: 3% 0%;
+      position: relative;
+      float: left;
+      font-size: 1.3em;
+    }
+    .ctaText {
+      text-align: center;
+      width: 45%;
+      margin: 0 auto;
+      font-size: 1.1em;
+    }
+
+    @media screen and (max-width: 1068px) {
+      .centerbtn {
+        width: 275px !important;
+      }
+      #landingbtn {
+        font-size: 1em;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      .largeText h1 {
+        margin-top: 20%;
+        font-size: 2em;
+      }
+      .largeText h2 {
+        font-size: 0.8em;
+      }
+      .landingmoduleimg,
+      .landingmodule {
+        width: 100%;
+      }
+      .landingText {
+        text-align: center;
+      }
+    }
+    .buttonWrap,
+    .ctaWrap {
+      width: 100%;
+      float: left;
+    }
+    .centerbtn {
+      width: 35%;
+      margin: 0 auto;
+      padding-top: 4%;
+    }
+
+    @media screen and (max-width: 480px) {
+      .largeText h2 {
+        padding-top: 2em !important;
+      }
+    }
+  </style>
+
+  <title>Email Communication Preferences | CadmiumCD</title>
+  <meta
+    name="description"
+    content="How would you like CadmiumCD to communicate with you?"
+  />
+</head>
+
+<body>
+  <style>
+    #landingheader {
+      color: #dddddd;
+      margin: 0 0px 0px 0px;
+      background: #242d30;
+      height: 70px;
+      line-height: 6px;
+      position: relative;
+      z-index: 500;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      z-index: 10000;
+    }
+    #landingheader nav a:hover {
+      color: #359be3;
+    }
+    #mobilenav {
+      display: none;
+    }
+    #landingheader nav ul li {
+      display: inline-block;
+      margin: 0;
+      float: left;
+    }
+    #landingheader nav ul li:last-child {
+      margin-left: 25px;
+      float: right;
+    }
+    #landingheader nav ul li:last-child a:hover {
+      color: #242d30;
+    }
+    .landinghdrnav {
+      font-size: 35px;
+    }
+    .landinghdrbutton {
+      text-align: center;
+      margin: 0;
+      background: #359be3;
+      color: white;
+      cursor: pointer;
+      padding: 20px 10px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 700;
+      outline: none;
+      position: relative;
+      font-weight: bold !important;
+      text-transform: uppercase !important;
+    }
+
+    #landinghdrdemo {
+      font-size: 20px !important;
+      width: 90%;
+      margin: 0;
+      padding: auto 5%;
+    }
+    @media screen and (max-width: 768px) {
+      #landingheader nav {
+        display: inline-block !important;
+        position: static;
+        height: 60px;
+        width: 5%;
+        float: right;
+        line-height: 0px;
+        background: #242d30;
+        box-shadow: none;
+      }
+      #landingheader nav ul {
+        position: absolute;
+        right: 0;
+      }
+      #landingheader nav ul li {
+        border: none;
+      }
+      #landingheader nav ul li:last-child {
+        margin-left: 5px;
+      }
+      #landingheader nav a {
+        color: #fff;
+      }
+    }
+  </style>
+
+  <div id="landingheader">
+    <div class="wrapper">
+      <div height="70px">
+        <a id="logo" href="http://www.cadmiumcd.com">
+          <img
+            src="http://cadmiumcd.com/products/custom/images/CadmiumCDLogo_NoTag.png"
+            width="200px"
+            style="margin-top: 12px"
+          />
+        </a>
+
+        <nav>
+          <ul id="cssmenu">
+            <li class="landinghdrbutton">
+              <a id="landinghdrdemo" href="http://cadmiumcd.com/contact/"
+                >DEMO</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <a id="mobilenav" href="">Menu</a>
+  </div>
+
+  <div class="section whiteWrap" style="padding-top: 3%">
+    <div class="wrapper clearfix row largeText">
+      <div class="hdrDiv"><div class="hdrDivHide"></div></div>
+      <h1 class="Light">%%Title%%</h1>
+      <h2 class="SemiBold">How would you like us to communicate with you?</h2>
+    </div>
+  </div>
+
+  <div class="section whiteWrap">
+    <div class="wrapper module clearfix">%%content%%</div>
+  </div>
+
+  <style>
+    #footer-container.top {
+      background-color: #242d30;
+      margin-bottom: 0;
+      padding-bottom: 2%;
+    }
+    #footer-container.top h4 {
+      text-align: center;
+      margin-top: 4%;
+    }
+    #footer-container.top .footerProdList {
+      text-align: center;
+      list-style: none;
+    }
+    #footer-container.top .footerProdList a {
+      float: left;
+      width: 10%;
+      padding: 0 3%;
+    }
+    #footer-container.top .footerProdList span {
+      font-size: 1.5em;
+    }
+    #footer-container.top .prodListIcon {
+      color: #efefef;
+    }
+    #footer-container.top a:nth-child(1) li:hover,
+    #footer-container a:nth-child(1) li:hover .prodListIcon {
+      color: #efc944;
+    }
+    #footer-container.top a:nth-child(2) li:hover,
+    #footer-container a:nth-child(2) li:hover .prodListIcon {
+      color: #64a632;
+    }
+    #footer-container.top a:nth-child(3) li:hover,
+    #footer-container a:nth-child(3) li:hover .prodListIcon {
+      color: #57a7ea;
+    }
+    #footer-container.top a:nth-child(4) li:hover,
+    #footer-container a:nth-child(4) li:hover .prodListIcon {
+      color: #cb5447;
+    }
+    #footer-container.top a:nth-child(5) li:hover,
+    #footer-container a:nth-child(5) li:hover .prodListIcon {
+      color: #e99456;
+    }
+    #footer-container.top a:nth-child(6) li:hover,
+    #footer-container a:nth-child(6) li:hover .prodListIcon {
+      color: #7c7cc5;
+    }
+
+    .twocol.leftcol.clearfix {
+      /* border-right: 1px #242424 solid; */
+      width: 38%;
+    }
+    #footer-container .contactinfo {
+      padding-left: 35%;
+    }
+    #footer-container h4 {
+      font-size: 30px;
+      margin: 5% auto;
+    }
+    #footer-container .twocol.last {
+      width: 48%;
+      float: right;
+      padding-top: 6%;
+    }
+    #footer-container footer {
+      padding: 0px;
+    }
+    #footer-container footer div.twocol.last h4 {
+      text-align: center;
+    }
+    #footer-container footer div.twocol.last form {
+      width: 50%;
+      margin: auto 20%;
+      padding-left: 10%;
+    }
+    .footerReqInfo {
+      width: 50%;
+      margin: 0 auto;
+    }
+    #footer-container footer div.twocol.last .btn8 {
+      background-color: #64a632;
+      width: 87%;
+    }
+    #footer-container footer div.twocol.last .btn8:hover {
+      background-color: #57bb0c;
+    }
+    .footer {
+      height: 50%;
+      float: left;
+      width: 100%;
+    }
+    .footerSignup.clearfix {
+      height: 50%;
+      float: left;
+    }
+    #footer-container .twocol {
+      margin-bottom: 0;
+    }
+    #copyright {
+      width: 100%;
+      position: relative;
+      float: left;
+    }
+    #copyright .wrapper.clearfix {
+      /* border-top:  1px #242424 solid; */
+      position: relative;
+    }
+    .staticfooterleft span {
+      border-right: 1px #bebebe solid;
+      padding: 0 10px;
+    }
+    .staticfooterleft span:first-child {
+      padding: 0 10px 0 0;
+    }
+    .staticfooterleft a {
+      font-size: 14px;
+      font-weight: 100;
+      color: #bebebe;
+    }
+    .staticfooterleft span:last-child {
+      border-right: none;
+    }
+    #footer-container.bottom {
+      background: #20292c;
+    }
+
+    @media only screen and (max-width: 768px) {
+      #footer-container.top .footerProdList a,
+      .footerProdList li {
+        float: left;
+        width: 260px;
+        padding: 3%;
+      }
+      .twocol.leftcol.clearfix {
+        width: 100%;
+      }
+      .footerReqInfo {
+        width: 50%;
+        margin: 0 auto;
+      }
+      #footer-container footer div.twocol.last .btn8 {
+        width: 87%;
+      }
+      #footer-container .contactinfo,
+      #footer-container .label {
+        text-align: center;
+        padding-left: 0%;
+        width: 100%;
+        float: left;
+      }
+      #footer-container .contactinfo:last-child {
+        padding-bottom: 3%;
+      }
+      #footer-container .footerH4left {
+        text-align: left;
+        margin-left: 5%;
+      }
+      #footer-container h4 {
+        padding-top: 6%;
+        font-size: 30px;
+        line-height: 1.3em;
+        text-align: center;
+        padding-top: 0%;
+      }
+      .twocol.last {
+        width: 100%;
+      }
+      #footer-container .footerH4,
+      #footer-container .footerH4news {
+        margin-left: 3%;
+        width: 100%;
+        text-align: left;
+      }
+      #footer-container .twocol.last {
+        width: 90%;
+        padding: 3% 3% 10% 3%;
+      }
+      #footer-container footer div.twocol.last form {
+        padding-left: 0%;
+      }
+      #footer-container .staticfooterleft a {
+        font-size: 12px;
+      }
+      #footer-container .staticfooterright span {
+        font-size: 12px;
+      }
+      .staticfooterright {
+        width: 650px;
+        float: right;
+        text-align: right;
+        font-size: 14px;
+        margin-right: 2.5%;
+      }
+    }
+
+    @media only screen and (max-width: 480px) {
+      #footer-container.top .footerProdList a,
+      .footerProdList li {
+        float: left;
+        width: 90%;
+        padding: 3%;
+      }
+      .twocol.leftcol.clearfix {
+        width: 100%;
+      }
+      #footer-container .contactinfo,
+      #footer-container .label {
+        text-align: left;
+        padding-left: 10%;
+      }
+      #footer-container .contactinfo:last-child {
+        padding-bottom: 3%;
+      }
+      #footer-container .footerH4left {
+        text-align: left;
+        margin-left: 5%;
+      }
+      #footer-container h4 {
+        padding-top: 6%;
+        font-size: 30px;
+        line-height: 1.3em;
+      }
+      .twocol.last {
+        width: 100%;
+      }
+      #footer-container .footerH4,
+      #footer-container .footerH4news {
+        margin-left: 3%;
+        width: 100%;
+        text-align: left;
+      }
+      #footer-container .twocol.last {
+        width: 90%;
+        padding: 3% 3% 10% 3%;
+      }
+      #footer-container footer div.twocol.last form {
+        padding-left: 0%;
+      }
+      #footer-container .staticfooterleft a {
+        font-size: 10px;
+      }
+      .staticfooterright {
+        text-align: left;
+        float: left;
+        margin: 6% auto auto 2%;
+      }
+      .footerReqInfo {
+        width: 100%;
+        margin: 0 auto;
+      }
+      #footer-container footer div.twocol.last .btn8 {
+        width: 75%;
+        margin-left: 5%;
+      }
+    }
+
+    @media only screen and (max-width: 1140px) {
+      .labelcontainer {
+        padding-bottom: 3%;
+      }
+    }
+
+    @media only screen and (min-width: 480px) and (max-width: 768px) {
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    }
+
+    @media only screen and (min-width: 1024px) and (max-width: 1140px) {
+    }
+  </style>
+
+  <div id="footer-container" style="margin-bottom: 0px; padding-bottom: 2%">
+    <footer class="wrapper clearfix">
+      <div class="twocol leftcol clearfix">
+        <h4>Contact Us</h4>
+
+        <div class="clearfix labelcontainer">
+          <div class="label address">Address</div>
+          <div class="contactinfo">CadmiumCD</div>
+          <div class="contactinfo nomargin">19 Newport Drive, Suite 101</div>
+          <div class="contactinfo nomargin">Forest Hill, MD 21050</div>
+        </div>
+
+        <div class="clearfix labelcontainer">
+          <div class="label">Phone</div>
+
+          <div class="contactinfo">877.426.6323 (Toll Free)</div>
+          <div class="contactinfo nomargin">410.638.9239 (Direct)</div>
+        </div>
+
+        <div class="clearfix labelcontainer">
+          <div class="label hours">Hours</div>
+          <div class="contactinfo">Mon &ndash; Fri, 9am &ndash; 6pm ET</div>
+        </div>
+
+        <div class="clearfix labelcontainer">
+          <div class="label">Email</div>
+          <div class="contactinfo">
+            <a href="mailto:info@cadmiumcd.com" style="color: #efefef"
+              >info@cadmiumcd.com</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="twocol last">
+        <h4>Want to Find Out More?</h4>
+
+        <div class="footerReqInfo">
+          <a href="https://cadmiumcd.com/contact/">
+            <p class="btn8">Contact Us</p>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <div id="footer-container" class="bottom">
+    <div id="copyright" class="mobilehide">
+      <div class="wrapper clearfix">
+        <div class="staticfooterleft">
+          <span
+            ><a href="http://www.cadmiumcd.com/cadmiumcd/OurStory.asp"
+              >About Us</a
+            ></span
+          >
+          <span
+            ><a href="http://www.cadmiumcd.com/cadmiumcd/news/blog.asp"
+              >Press</a
+            ></span
+          >
+          <span
+            ><a href="http://www.cadmiumcd.com/cadmiumcd/privacy.asp"
+              >Privacy</a
+            ></span
+          >
+          <span
+            ><a
+              href="http://www.cadmiumcd.com/cadmiumcd/terms-and-conditions.asp"
+              >Terms and Conditions</a
+            ></span
+          >
+        </div>
+        <div class="staticfooterright">
+          <span>© Copyright 2014 CadmiumCD. All Rights Reserved.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
